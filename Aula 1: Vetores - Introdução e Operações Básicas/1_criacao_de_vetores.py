@@ -12,9 +12,15 @@ import numpy as np
 
 # Vetor linha
 v = np.array([1, 2, 3])
-print("Vetor linha:", v)
+print('_____Vetor linha com array([1, 2, 3])_____')
+print(v)
 
 # Vetor coluna (transporto do vetor linha)
 v_coluna = v.reshape(-1, 1)
-print("Vetor coluna:", v_coluna)
+print('_____Vetor coluna com reshape(-1, 1)_____')
+print(v_coluna)
+print('_____________________________')  
+print(np.array([[1], [2], [3]]), '\n', '_____________________________')
 
+print(v_coluna == np.array([[1], [2], [3]])) # True
+print(np.array([[2, 1], [2, 'a'], [3, True]])) # True

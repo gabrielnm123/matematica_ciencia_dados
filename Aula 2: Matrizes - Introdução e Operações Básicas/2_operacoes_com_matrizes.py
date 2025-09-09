@@ -14,9 +14,11 @@ import numpy as np
 # Exemplo: [ 1, 2 ] [ 3, 4 ] * [ 5, 6 ] [ 7, 8 ] = [ (1*5 + 2*7), (1*6 + 2*8) ] [ (3*5 + 4*7), (3*6 + 4*8) ] = [ 19, 22 ] [ 43, 50 ]
 # quando a maltiplicação de matrizes é possível? quando o número de colunas da primeira matriz é igual ao número de linhas da segunda matriz.
 # o resultado C da multiplicação de uma matriz (m x n) por outra matriz (n x p) é uma nova matriz (m x p).
-# cada elemento cij é calculado como o produto escalar entre a i-ésima linha da primeira matriz e a j-ésima coluna da segunda matriz. notação: cij = ai1 * b1j + ai2 * b2j + ... + ain * bnj
+# cada elemento cij é calculado como o produto escalar entre a i-ésima linha da primeira matriz e a j-ésima coluna da segunda matriz. 
+# notação: cij = ai1 * b1j + ai2 * b2j + ... + ain * bnj
 # Exemplo: A (2x3) * B (3x2) = C (2x2)
 # Exemplo: c12 = a11 * b12 + a12 * b22 + a13 * b32
+# https://www.youtube.com/watch?v=KKCmjnU2y3o
 
 # Matrizes A e B (com dimensões adequadas)
 A = np.array([[1, 2], [3, 4]])
@@ -37,5 +39,6 @@ multiplicacao_escalar = escalar * A
 print('Multiplicação por escalar:\n', multiplicacao_escalar)
 
 # Multiplicação de matrizes
-multiplicacao_matrizes = np.dot(A, C) # ou A @ C
+multiplicacao_matrizes = np.dot(A, C) # ou A @ C 
+# A * C é outro tipo de multiplicação (element-wise).
 print('Multiplicação de matrizes:\n', multiplicacao_matrizes)

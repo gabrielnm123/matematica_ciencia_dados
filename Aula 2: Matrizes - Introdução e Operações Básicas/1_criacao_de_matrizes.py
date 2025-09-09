@@ -13,7 +13,10 @@ import numpy as np
 #               [ a_31, a_32, a_33 ]
 
 # Matriz 2x3
-A = np.array([[1, 2, 3], [4, 5, 6]])
+A = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
 print("Matriz A:\n", A)
 
 # Matriz 2x2
